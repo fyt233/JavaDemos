@@ -1,5 +1,7 @@
 package chap4;
 
+import java.util.Scanner;
+
 public class ScoreDemo {
     public static void main(String[] args) {
         Score sc1 = new Score(78,90,98,70);
@@ -12,6 +14,19 @@ public class ScoreDemo {
 
 
         Score sc2 = new Score();
+
+        //从键盘输入数据再创建对象
+        Scanner in = new Scanner(System.in);
+        //方法一
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        int d = in.nextInt();
+        Score sc3= new Score(a,b,c,d);
+
+        //方法二
+        Score sc4 = new Score(in.nextInt(),in.nextInt(),in.nextInt(),in.nextInt());
+        System.out.println(sc4.getDetails());
     }
 }
 
