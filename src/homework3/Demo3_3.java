@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package homework3;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
